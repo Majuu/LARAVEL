@@ -29,4 +29,8 @@ class PagesController extends Controller
     public function getSowy(){
       return view('sowy');
     }
+
+
+
+
 }

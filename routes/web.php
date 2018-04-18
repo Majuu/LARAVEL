@@ -25,6 +25,9 @@ Route::get('/sowy', 'PagesController@getSowy');
 
 Route::get('/messages', 'MessagesController@getMessages');
 
+Route::get('/profile', 'UserController@profile');
+Route::post('/profile', 'UserController@update_avatar');
+
 Route::post('/contact/submit', 'MessagesController@submit');
 
 Auth::routes();
@@ -32,3 +35,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/kategorias', 'KategoriaController@getKategorias');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

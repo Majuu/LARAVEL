@@ -2,23 +2,23 @@
 
 @section('content')
 <p></p>
-  <h1>Contact</h1>
+  <h1>Kontakt</h1>
   {!! Form::open(['url' => 'contact/submit']) !!}
     <div class="form-group">
-      {{Form::label('name', 'Name:')}}
-      {{Form::text('name', '', ['class' => 'form-control', 'placeholder' => 'Enter name'])}}
+      {{Form::label('name', 'Imię:')}}
+      {{Form::text('name', '', ['class' => 'form-control', 'placeholder' => 'Wpisz swoje imię'])}}
     </div>
     <div class="form-group">
-      {{Form::label('email', 'E-Mail Address:')}}
-      {{Form::text('email', '', ['class' => 'form-control', 'placeholder' => 'Enter email'])}}
+      {{Form::label('email', 'E-Mail:')}}
+      {{Form::text('email', '', ['class' => 'form-control', 'placeholder' => 'Email'])}}
     </div>
     <div class="form-group">
-      {{Form::label('message', 'Message:')}}
-      {{Form::textarea('message', '', ['class' => 'form-control', 'placeholder' => 'Enter message'])}}
+      {{Form::label('message', 'Wiadomość:')}}
+      {{Form::textarea('message', '', ['class' => 'form-control', 'placeholder' => 'Tu wpisz wiadomość'])}}
     </div>
 
     <div>
-      {{Form::submit('Submit', ['class'=> 'btn btn-primary'])}}
+      {{Form::submit('Wyślij', ['class'=> 'btn btn-primary'])}}
     </div>
   {!! Form::close() !!}
 @endsection
