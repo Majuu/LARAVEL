@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<p></p>
+
 <p></p>
 <img src="/img/avatars/{{ $user->avatar }}" style="width:150px; height:150px; float:left; border-radius:50%; margin-right:25px;">
 <h1>Profil użytkownika: {{ $user->name }}</h1>
@@ -13,8 +13,7 @@
 
 </form>
 
-
-
-
-
+<p></p>
+<p>Lorem ipsum dolor sit amet,nim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
 @endsection
